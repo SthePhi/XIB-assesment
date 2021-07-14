@@ -16,10 +16,11 @@ public class AgentResource {
     @Autowired
     private AgentServiceImpl agentService;
 
-    @GetMapping(path = "/agents/")
+
+   /* @GetMapping(path = "/agents/")
     public List<Agent> viewAgents() {
         return agentService.findAgents();
-    }
+    }*/
 
     @GetMapping(path = "/agent/{id}/")
     public Agent viewAgent(@PathVariable("id") Long id) {

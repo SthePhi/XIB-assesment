@@ -6,6 +6,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@RepositoryRestResource( collectionResourceRel = "agentlist", path = "agentlist")
+@RepositoryRestResource( collectionResourceRel = "agents", path = "agents")
 public interface AgentRepository extends JpaRepository<Agent, Long> {
 }
